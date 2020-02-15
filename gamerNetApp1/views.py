@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from gamerNetApp1.models import Article
 
-
 # Create your views here.
 
 def index(request):
