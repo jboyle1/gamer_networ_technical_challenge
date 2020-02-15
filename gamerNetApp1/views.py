@@ -33,3 +33,16 @@ articles = [
 ]
 
 
+# Group dictionary items by column number
+def grouping():
+    grouped = collections.defaultdict(list)
+    for item in articles:
+        grouped[item['columns']].append(item)
+
+    for columns, group in grouped.items():
+        
+        print("\n")
+        print("Articles that take up {} columns:".format(columns))
+        print(group)
+
+grouping()
