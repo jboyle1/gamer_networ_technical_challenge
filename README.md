@@ -175,6 +175,10 @@ I Hope that my approach to this challenge shows that I am confident using the Dj
 I had some difficulties deploying this project with Heroku, so unfortunatly there is no direct URL link.
 
 
+#### Final browser render
+
+![]({% static "image/final-render" %})
+
 
 
 
