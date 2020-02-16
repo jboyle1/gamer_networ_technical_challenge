@@ -9,16 +9,31 @@
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="{% static "gamerNetApp1/css/styles.css" %}">
+
+        <!-- JQuery to select columns -->
+
+        <script src="{% static "gamerNetApp1/js/jquery-3.4.1.js" %}"></script>
+        <script>
+            $("document").ready(function () {
+                $(".item:contains('1')").css("width", "300");
+                $(".item:contains('2')").css("width", "600");
+                $(".item:contains('3')").css("width", "900");
+            })
+        </script>
+        <script src="{% static "gamerNetApp1/js/script.js" %}"></script>
         <title>Gamer Network Technical Challenge</title>
     </head>
     <body>
         {% if Articles %}
-            {% for col in Articles %}
-                <div class="container" id="container">
-                    <div class="item">{{ col.title }}{{ col.columns}}</div>
-                </div>
-            {% endfor %}
+            <div class="container">
+                {% for col in Articles %}
+                    <div class="item">
+                        <h1>{{ col.title }}</h1><br><br>
+                        <p>Columns:
+                            {{col.columns}}</p>
+                    </div>
+                {% endfor %}
+            </div>
         {% endif %}
-        <script src="{% static "gamerNetApp1/js/script.js" %}"></script>
     </body>
 </html>
