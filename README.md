@@ -172,7 +172,7 @@ I Hope that my approach to this challenge shows that I am confident using the Dj
 
 #### Deployment
 
-I used Heroku to deploy this application 
+I had some difficulties deploying this project with Heroku, so unfortunatly there is no direct URL link.
 
 
 
